@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 // Use the promise functionality built into Node
 mongoose.Promise = global.Promise
 
-mongoose.connect('mongodb://localhost/youcanbuildyourownshop', { useMongoClient: true })
+mongoose.connect('mongodb://localhost/myshop', { useMongoClient: true })
   .then(() => {
     console.log('Successfully connected to database!')
   })
